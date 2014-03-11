@@ -4,7 +4,9 @@
   "description": "Custom dom elements",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "component/emitter" : "*"
+  },
   "development": {
     "component/assert" : "*"
   },

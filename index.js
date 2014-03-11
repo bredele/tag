@@ -1,10 +1,30 @@
 
+var elements = {};
+
 /**
- * Expose 'Mod'
+ * Expose 'Tag'
  */
 
 module.exports = function() {
 
+	/**
+	 * [Tag description]
+	 */
+	
+	function Tag(name) {
+		
+	}
+
+	/**
+	 * [use description]
+	 * @return {[type]} [description]
+	 */
+	
+	Tag.use = function(fn) {
+		fn(this);
+	};
+
+	return Tag;
 };
 
 
@@ -12,6 +32,6 @@ module.exports = function() {
  * Expose 'Mod'
  */
 
-module.exports.register = function() {
-
+module.exports.register = function(name, obj) {
+	elements[name] = obj;
 };
